@@ -36,14 +36,37 @@
   a{color:#0e7490}
   footer{font-size:12px;color:var(--muted);margin-top:18px}
   @media print{body{background:#fff}.day,.card{break-inside:avoid}header{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+  /* menu */
+  #menu{--ink:#1f2933;--muted:#5f6b7a;--line:#e3e8ee;--sand:#fdf6e9;--a:#be185d;--b:#b45309;--c:#15803d;--d:#475569}
+  #menu header{background:linear-gradient(135deg,#b45309,#f59e0b);color:#fff;border-radius:14px;padding:18px 24px;margin-bottom:16px}
+  #menu header h1{margin:0 0 4px;font-size:24px}
+  #menu header p{margin:0;font-size:14px;opacity:.95}
+  #menu header a{color:#fff}
+  #menu .card{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:16px;overflow:hidden}
+  #menu .card h2{margin:0;padding:10px 16px;background:var(--sand);border-bottom:1px solid var(--line);font-size:17px}
+  #menu .body{padding:12px 16px}
+  #menu .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+  #menu h3{margin:0 0 4px;font-size:15px}
+  #menu ul{margin:0;padding-left:18px;font-size:14px}
+  #menu ul.chk{list-style:none;padding-left:0}
+  #menu ul.chk label{cursor:pointer;display:flex;gap:6px;align-items:flex-start}
+  #menu ul.chk input{margin-top:3px}
+  #menu ul.chk input:checked+*,#menu ul.chk label:has(input:checked){color:#94a3b8;text-decoration:line-through}
+  #menu li{margin:2px 0}
+  #menu .n{color:var(--muted);font-size:12.5px}
+  #menu .tag{display:inline-block;font-size:11px;font-weight:600;color:#fff;border-radius:999px;padding:1px 8px;margin-left:4px;vertical-align:1px}
+  #menu .k{background:var(--a)} .ar{background:var(--b)} .s{background:var(--c)} .h{background:var(--d)}
+  #menu .legend{font-size:12.5px;color:var(--muted);margin:0 0 14px}
+  #menu .tip{background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:8px 12px;font-size:13px;margin-top:10px}
+  #menu a{color:#0e7490}
 </style>
 </head>
-<body>
+<body id="top">
 <div class="wrap">
 
 <header>
   <h1>🌊 Pismo Beach Family Trip</h1>
-  <p><b>Oct 24–26, 2026</b> · 2 families · 3 kids under 4 · ~3 hr drive from San Jose<br>🏠 Airbnb: <b>1178 Shannon Lane</b> <a class="m" style="color:#fff" target="_blank" href="https://www.google.com/maps/search/?api=1&query=1178+Shannon+Lane">📍</a></p>
+  <p><b>Oct 24–26, 2026</b> · 2 families · 3 kids under 4 · ~3 hr drive from San Jose · <a href="#menu" style="color:#fff;font-weight:600">🍲 Menu &amp; shopping list →</a><br>🏠 Airbnb: <b>1178 Shannon Lane</b> <a class="m" style="color:#fff" target="_blank" href="https://www.google.com/maps/search/?api=1&query=1178+Shannon+Lane">📍</a></p>
 </header>
 
 <div class="legend">
@@ -59,15 +82,14 @@
 <section class="day">
   <h2>Sat, Oct 24 · Arrive + Clamming</h2>
   <table>
-    <tr class="drive"><td class="t">9:00 AM</td><td>Leave San Jose (kids in costumes)</td></tr>
+    <tr class="drive"><td class="t">9:00 AM</td><td>Leave San Jose (kids in costumes) <span class="n">· Korean market shopping done before leaving, food in cooler</span></td></tr>
     <tr class="kid"><td class="t">10:30</td><td>Pit stop: San Lorenzo Park, King City <a class="m" target="_blank" href="https://www.google.com/maps/search/?api=1&query=San+Lorenzo+Park+King+City+CA">📍</a></td></tr>
     <tr class="eat"><td class="t">12:30 PM</td><td><b>Lunch: Splash Café</b> <a class="m" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Splash+Cafe+197+Pomeroy+Ave+Pismo+Beach+CA">📍</a> <span class="n">· chowder bread bowls, eat by the pier</span></td></tr>
     <tr class="kid"><td class="t">1:15</td><td>Downtown merchant trick-or-treating (12–2) + Whale playground <a class="m" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Pismo+Beach+Pier+Pismo+Beach+CA">📍</a></td></tr>
     <tr class="drive"><td class="t">2:00</td><td>Clam forks + gauge: Pismo Hardware <a class="m" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Pismo+Hardware+930+Price+St+Pismo+Beach+CA">📍</a></td></tr>
     <tr class="clam"><td class="t">2:30–4:15</td><td><b>🐚 Clamming, Oceano Dunes</b> <span class="tide">Low tide 3:38 PM</span> <span class="n">· Pier Ave, Oceano (see Where to clam)</span></td></tr>
-    <tr class="rest"><td class="t">4:30</td><td>Airbnb check-in (1178 Shannon Lane) <a class="m" target="_blank" href="https://www.google.com/maps/search/?api=1&query=1178+Shannon+Lane">📍</a> · rest · one adult grabs groceries</td></tr>
-    <tr class="eat"><td class="t">5:30 PM</td><td><b>Dinner: Cracked Crab</b> <a class="m" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Cracked+Crab+Pismo+Beach+CA">📍</a> <span class="n">· backup: Ada's Fish House</span> <a class="m" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Ada's+Fish+House+Pismo+Beach+CA">📍</a></td></tr>
-    <tr class="sun"><td class="t">6:15</td><td>Sunset on Pismo Pier <a class="m" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Pismo+Beach+Pier+Pismo+Beach+CA">📍</a></td></tr>
+    <tr class="rest"><td class="t">4:30</td><td>Airbnb check-in (1178 Shannon Lane) <a class="m" target="_blank" href="https://www.google.com/maps/search/?api=1&query=1178+Shannon+Lane">📍</a> · rest · one adult: Vons for eggs, milk, fruit <a class="m" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Vons+1758+W+Grand+Ave+Grover+Beach+CA">📍</a></td></tr>
+    <tr class="eat"><td class="t">6:00 PM</td><td><b>🍲 Cook: 등촌샤브 칼국수 + 조개찜</b> <a class="m" href="#menu">menu</a> <span class="n">· backup: Cracked Crab to-go</span> <a class="m" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Cracked+Crab+751+Price+St+Pismo+Beach+CA">📍</a></td></tr>
   </table>
 </section>
 
@@ -78,9 +100,9 @@
     <tr class="kid"><td class="t">9:30</td><td><b>Avila Valley Barn</b> <a class="m" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Avila+Valley+Barn+560+Avila+Beach+Dr+San+Luis+Obispo+CA">📍</a> <span class="n">· pumpkins, petting zoo, hayride, pony rides (10–2)</span></td></tr>
     <tr class="eat"><td class="t">11:45</td><td>Lunch at the Barn <span class="n">· BBQ, corn, olallieberry ice cream</span></td></tr>
     <tr class="kid"><td class="t">12:30 PM</td><td><b>Central Coast Aquarium</b> <a class="m" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Central+Coast+Aquarium+50+San+Juan+St+Avila+Beach+CA">📍</a> <span class="n">· touch tanks · $15 / $13 kids, under 3 free</span></td></tr>
-    <tr class="rest"><td class="t">1:30</td><td>Naps at Airbnb</td></tr>
+    <tr class="rest"><td class="t">1:30</td><td>Naps at Airbnb · one adult: meat run <span class="n">· Costco SLO</span> <a class="m" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Costco+1540+Froom+Ranch+Way+San+Luis+Obispo+CA">📍</a></td></tr>
     <tr class="clam"><td class="t">3:15–5:30</td><td><b>🐚 Clamming, Oceano Dunes</b> <span class="tide">Low tide 4:19 PM</span> <span class="n">· Pier Ave, Oceano (see Where to clam)</span></td></tr>
-    <tr class="eat"><td class="t">6:15 PM</td><td><b>🍳 Cook dinner</b> <span class="n">· steamed clams + tri-tip, corn, pasta</span></td></tr>
+    <tr class="eat"><td class="t">6:15 PM</td><td><b>🥩 Cook: BBQ / steak</b> <a class="m" href="#menu">menu</a> <span class="n">· tri-tip, 쌈</span></td></tr>
   </table>
 </section>
 
@@ -131,11 +153,7 @@
   </div>
   <div class="card">
     <h3>🛒 Groceries</h3>
-    <ul>
-      <li>Butter, garlic, white wine, lemon, bread</li>
-      <li>Tri-tip, corn, salad, pasta</li>
-      <li>Breakfast items + kid snacks</li>
-    </ul>
+    <p style="margin:0 0 6px;font-size:13.5px"><a href="#menu"><b>Full menu &amp; shopping list →</b></a></p>
     <h3 style="margin-top:10px">🏪 Stores</h3>
     <ul>
       <li><b>Vons</b> (Safeway), Grover Beach <a class="m" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Vons+1758+W+Grand+Ave+Grover+Beach+CA">📍</a> · on Grand Ave, near the beach</li>
@@ -170,6 +188,131 @@
   <p style="margin:0;padding:10px 16px;font-size:13.5px;border-top:1px solid var(--line)">📌 Full list of SLO County Halloween events and pumpkin patches: <a href="https://www.sanluisobispomom.com/halloween.php" target="_blank">SanLuisObispoMom.com – Halloween</a></p>
 </section>
 
+
+<section id="menu" style="margin-top:28px">
+
+<header>
+  <h1>🍲 Menu & Shopping</h1>
+  <p>4 adults + 3 toddlers · <a href="#top">↑ Back to timetable</a></p>
+</header>
+
+<p class="legend">Where to buy:
+  <span class="tag k">K</span> Korean market, San Jose (before leaving)
+  <span class="tag ar">A</span> On arrival (Vons, Grover Beach)
+  <span class="tag s">SLO</span> Meat run, Sunday
+  <span class="tag h">H</span> Bring from home
+</p>
+
+<!-- DINNER 1 -->
+<section class="card">
+  <h2>Sat dinner · 등촌샤브 칼국수 + 조개찜</h2>
+  <div class="body">
+    <p class="n" style="margin:0 0 10px">Order: shabu (meat + veggies) → 칼국수 in the broth → 볶음밥 to finish. Keep the broth mild for the kids.</p>
+    <div class="grid">
+      <div>
+        <h3>샤브 + 칼국수 <span class="tag k">K</span></h3>
+        <ul>
+          <li>샤브용 소고기 (thin-sliced beef) 2 lb</li>
+          <li>미나리 2 bunches</li>
+          <li>버섯 (느타리, 팽이, 새송이) ~1.5 lb</li>
+          <li>배추 ¼ head, 청경채 6, 숙주 1 bag, 대파 2</li>
+          <li>칼국수 면 3 packs</li>
+          <li>육수: 사골곰탕 2 packs (or a 등촌 샤브 meal kit if they have one)</li>
+          <li>볶음밥: 김가루, 참기름 (+ rice, eggs)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>조개찜 <span class="tag k">K</span></h3>
+        <ul>
+          <li>Live clams (바지락/littleneck) 3 lb, plus whatever you catch</li>
+          <li>청양고추 3, 대파 1, 마늘 1 head</li>
+          <li>청주 or 소주 ½ cup, butter</li>
+        </ul>
+      </div>
+    </div>
+    <h3 style="margin-top:12px">🍶 안주 (to share with drinks) <span class="tag k">K</span></h3>
+    <div class="grid" style="margin-top:4px">
+      <div>
+        <ul>
+          <li><b>부추전</b>: 부침가루, 부추 2 bunches, 양파 1, 청양고추 (optional: shrimp)</li>
+          <li><b>계란말이</b>: kids love it too (eggs <span class="tag ar">A</span>)</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><b>Drinks</b>: 소주, 맥주, 막걸리 (goes with 부추전)</li>
+        </ul>
+      </div>
+    </div>
+    <p class="n" style="margin:4px 0 0">Make the 안주 while the broth heats, and eat them first with drinks. The shabu comes after.</p>
+    <div class="tip">🐚 <b>Clams:</b> soak in salted water (2 Tbsp salt per quart) for 1–2 hrs in a dark spot to purge sand. Saturday's catch only gets about an hour, so the store clams are the main batch. Keep live clams in the cooler, not in sealed bags.</div>
+    <div class="tip" style="background:#f0f9ff;border-color:#bae6fd">🦪 <b>Buy clams near the Airbnb</b> (if you skip the Korean market or need more). Call ahead to check for live clams.
+      <ul style="margin-top:4px">
+        <li><b>Olde Port Fish &amp; Seafood</b>, Grover Beach · (805) 489-3474 · best bet <a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Olde+Port+Fish+Seafood+Market+1160+W+Grand+Ave+Grover+Beach+CA">📍</a></li>
+        <li><b>Vons</b> seafood counter, Grover Beach · (805) 481-0877 <a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Vons+1758+W+Grand+Ave+Grover+Beach+CA">📍</a></li>
+        <li><b>El Pizmo Fish Co.</b>, Pismo · (805) 295-5156 · Wed–Mon 11–7 <a target="_blank" href="https://www.google.com/maps/search/?api=1&query=El+Pizmo+Fish+Co+751+Dolliver+St+Pismo+Beach+CA">📍</a></li>
+        <li><b>Harford Seafood</b>, Avila pier · (805) 596-4444 · opens 11 AM <a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Harford+Seafood+Company+Avila+Beach+CA">📍</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- DINNER 2 -->
+<section class="card">
+  <h2>Sun dinner · BBQ / Steak</h2>
+  <div class="body">
+    <p class="n" style="margin:0 0 10px">Grill indoors on the gas stove with the grill grid from home. Turn the range hood on high, since 삼겹살-style smoke can set off the alarm.</p>
+    <div class="grid">
+      <div>
+        <h3>Meat <span class="tag s">SLO</span></h3>
+        <ul>
+          <li>Tri-tip 2 (~5 lb), the Santa Maria local cut</li>
+          <li>or Ribeye 3–4 steaks</li>
+          <li>Sausages for the kids</li>
+          <li>Santa Maria seasoning, or salt + pepper + garlic</li>
+        </ul>
+        <p class="n" style="margin:6px 0 0">Where: Costco SLO, 1540 Froom Ranch Way (Sun 10–6, ~12 min from Avila), or Arroyo Grand Meat Co. (butcher, Arroyo Grande).</p>
+      </div>
+      <div>
+        <h3>Korean BBQ sides <span class="tag k">K</span></h3>
+        <ul>
+          <li>쌈: 상추 2 heads, 깻잎 2 packs</li>
+          <li>쌈장, 마늘, 고추</li>
+          <li>양파 2 (sliced thin with a 채칼) + 참소스</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BREAKFAST -->
+<section class="card">
+  <h2>Breakfast ×2 + snacks</h2>
+  <div class="body">
+    <ul>
+      <li>Eggs, bread, milk, yogurt, fruit, coffee <span class="tag ar">A</span></li>
+      <li>김, 즉석밥 <span class="tag k">K</span></li>
+      <li>Kid snacks, juice, drinks <span class="tag ar">A</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- CHECKLIST -->
+<section class="card">
+  <h2>✅ Checklist: buy / bring</h2>
+  <div class="body">
+    <div class="grid"><div><h3>Korean market, San Jose <span class="tag k">K</span></h3><ul class="chk"><li><label><input type="checkbox"> 샤브용 소고기 2 lb</label></li><li><label><input type="checkbox"> 미나리 2 bunches</label></li><li><label><input type="checkbox"> 버섯 (느타리, 팽이, 새송이) 1.5 lb</label></li><li><label><input type="checkbox"> 배추 ¼, 청경채 6, 숙주 1 bag</label></li><li><label><input type="checkbox"> 대파 3</label></li><li><label><input type="checkbox"> 칼국수 면 3 packs</label></li><li><label><input type="checkbox"> 사골곰탕 2 packs (or 등촌 샤브 meal kit)</label></li><li><label><input type="checkbox"> 김가루, 참기름</label></li><li><label><input type="checkbox"> Live clams 3 lb</label></li><li><label><input type="checkbox"> 청양고추 3 + 고추, 마늘 2 heads</label></li><li><label><input type="checkbox"> 청주 or 소주 (cooking)</label></li><li><label><input type="checkbox"> 부침가루, 부추 2 bunches</label></li><li><label><input type="checkbox"> 상추 2 heads, 깻잎 2 packs</label></li><li><label><input type="checkbox"> 쌈장, 참소스</label></li><li><label><input type="checkbox"> 양파 3 (부추전 + BBQ)</label></li><li><label><input type="checkbox"> 김, 즉석밥</label></li><li><label><input type="checkbox"> 고추장</label></li><li><label><input type="checkbox"> 컵라면</label></li><li><label><input type="checkbox"> 소주, 맥주, 막걸리</label></li></ul></div><div><h3>On arrival, Vons <span class="tag ar">A</span></h3><ul class="chk"><li><label><input type="checkbox"> Eggs 2 dozen</label></li><li><label><input type="checkbox"> Butter</label></li><li><label><input type="checkbox"> Bread, milk, yogurt, fruit, coffee</label></li><li><label><input type="checkbox"> Kid snacks, juice, drinks</label></li><li><label><input type="checkbox"> Ice</label></li></ul><div style="height:10px"></div><h3>Sunday meat run <span class="tag s">SLO</span></h3><ul class="chk"><li><label><input type="checkbox"> Tri-tip 2 (~5 lb) or ribeye 3–4</label></li><li><label><input type="checkbox"> Sausages for kids</label></li><li><label><input type="checkbox"> Santa Maria seasoning</label></li></ul><div style="height:10px"></div><h3>Clamming <span class="tag h">🐚</span></h3><ul class="chk"><li><label><input type="checkbox"> Fishing licenses for adults (buy online)</label></li><li><label><input type="checkbox"> Clam forks + fixed 4.5" gauge (Pismo Hardware)</label></li><li><label><input type="checkbox"> Mesh bag / bucket per digger</label></li></ul></div><div><h3>Bring from home <span class="tag h">H</span></h3><ul class="chk"><li><label><input type="checkbox"> Grill grid / 그릴팬</label></li><li><label><input type="checkbox"> Rice</label></li><li><label><input type="checkbox"> 채칼 (slicer)</label></li><li><label><input type="checkbox"> Cooler + ice packs</label></li><li><label><input type="checkbox"> Kids' plates, cups, spoons</label></li><li><label><input type="checkbox"> Halloween costumes</label></li><li><label><input type="checkbox"> Sand toys, towels, rain boots</label></li><li><label><input type="checkbox"> Jackets / layers, sunscreen, hats</label></li></ul></div></div>
+    <p class="n" style="margin:8px 0 0">Tap to check off. Saved on your own device.</p>
+  </div>
+</section>
+
+
+</section>
+<script>
+(function(){var k='pismo-checklist',b=document.querySelectorAll('.chk input'),st={};
+try{st=JSON.parse(localStorage.getItem(k)||'{}')}catch(e){}
+b.forEach(function(x,i){x.checked=!!st[i];x.addEventListener('change',function(){st[i]=x.checked;try{localStorage.setItem(k,JSON.stringify(st))}catch(e){}})});})();
+</script>
 <footer>Tide times: Port San Luis station forecast. Confirm tides, hours and prices a few days before the trip.</footer>
 </div>
 </body>
